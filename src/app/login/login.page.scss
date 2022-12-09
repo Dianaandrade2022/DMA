@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Bungee Spice', cursive;
+    src: url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lato&family=Montserrat:wght@300&family=Oswald:wght@500&family=Poppins:ital,wght@0,100;0,300;1,200&family=Raleway:wght@200&family=Rubik+Spray+Paint&display=swap" );
+}
+form{
+    padding: 30px 20%;
+    & div{
+        margin: 2% 5%;
+    }
+}
+input{
+    border-radius: 13px;
+    border: solid 1px ;
+    padding: 3%;
+}
+div{
+    text-align: center;
+}
+@media screen and (max-width:720px){
+    form{
+        padding: 30px 0;
+        text-align: center;
+    }
+    input{
+        width: 100%;
+    }
+}
+h1{
+    font-family: 'Bungee Spice', cursive;
+}
+ion-content{
+    background-image: url('../../assets/inicio/0.jpeg');
+}
+ion-title{
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Registre su donativo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar color="primary">
+      <ion-title size="large">Registre su donativo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <div class="mb-3 row">
+      <div class="col-sm-5" color="secondary">
+        <input type="number" class="form-control-plaintext" id="staticEmail" value="260">
+      </div>
+      <div class="col-sm-5" color="succes">
+        <input type="number" class="form-control" id="inputPassword" value="350">
+      </div>
+      <div class="col-sm-5" color="danger">
+        <input type="number" class="form-control" id="inputPassword" value="5000">
+      </div>
+      <div class="col-sm-5" color="">
+        <input type="number" class="form-control" id="inputPassword" placeholder="otro">
+      </div>
+    </div>
+  </ion-card>
+  <ion-card>
+    <div class="mb-3 row">
+      <div class="col-sm-5" color="secondary">
+        <input type="text" class="form-control-plaintext" id="staticEmail" placeholder="Nombre">
+      </div>
+      <div class="col-sm-5" color="succes">
+        <input type="text" class="form-control" id="inputPassword" placeholder="Apellidos">
+      </div>
+      <div class="col-sm-5" color="danger">
+        <input type="number" class="form-control" id="inputPassword" placeholder="Telefono">
+      </div>
+      <div class="col-sm-5" color="">
+        <input type="email" class="form-control" id="inputPassword" placeholder="Correo electronico">
+      </div>
+      <div class="col-sm-12" color="">
+      </div>
+    </div>
+    <input type="submit" class="btn btn-dark" (click)="pagado()">
+  </ion-card>
+  
+</ion-content>

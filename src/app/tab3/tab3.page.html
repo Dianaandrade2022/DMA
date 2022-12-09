@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Perfil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar color="primary">
+      <ion-title size="large">Perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-toolbar class="menu" color="dark">
+    <ul>
+      <li><ion-icon name="person-circle-outline" slot="start"></ion-icon></li>
+      <li>03</li>
+      <li>20</li>
+      <li>500</li>
+    </ul>
+    <ul>
+      <li>Nombre</li>
+      <li>Cursos</li>
+      <li>Tareas</li>
+      <li>Puntos</li>
+    </ul>
+  </ion-toolbar>
+  <div class="contain">
+    <ion-card *ngFor="let curso of cursos ">
+      <ion-card-header>
+        <ion-img [src]="curso.id"></ion-img>
+      </ion-card-header>
+      <ion-card-subtitle><a href="/{{curso.tab}}">{{curso.name}}</a></ion-card-subtitle>
+    </ion-card> 
+  </div>
+</ion-content>
